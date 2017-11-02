@@ -256,7 +256,10 @@ public final class Help
                     sb.append(commandString);
             } else if (command instanceof LispObject) {
                 try {
-                    String s = ((LispObject)command).writeToString();
+                    String s = ((LispObject)command).printObject();
+                    // * Renamed LispObject.writeToString() method to
+                    // (more Lispy) printObject()
+                    //kfp/02-NOV-2017
                     sb.append(sanitize(s));
                 }
                 catch (Throwable t) {

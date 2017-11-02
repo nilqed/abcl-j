@@ -6353,7 +6353,11 @@ public final class Editor extends JPanel implements Constants,
         if (input.charAt(0) == '(') {
             // Lisp form.
             try {
-                String result = Interpreter.evaluate(input).writeToString();
+                //String result = Interpreter.evaluate(input).writeToString();
+                // * Renamed LispObject.writeToString() method to
+                // (more Lispy) printObject()
+                //kfp/02-NOV-2017
+                String result = Interpreter.evaluate(input).printObject();
                 if (interactive)
                     status(result);
             }
