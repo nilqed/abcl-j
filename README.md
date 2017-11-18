@@ -9,9 +9,9 @@ Original: http://armedbear-j.sourceforge.net/
  * Code changes (see below)
 
 
- 1. Removed ´GenericFunction´
- 2. Renamed ´LispObject.writeToString()´ method to
-    (more Lispy) ´printObject()´ according to
+ 1. Removed Â´GenericFunctionÂ´
+ 2. Renamed Â´LispObject.writeToString()Â´ method to
+    (more Lispy) Â´printObject()Â´ according to
     
 http://abcl.org/trac/browser/trunk/abcl/CHANGES
 
@@ -19,6 +19,6 @@ http://abcl.org/trac/browser/trunk/abcl/CHANGES
 
 Executable: JAB/dist/JAB.jar
 
-![JAB](/jab.png)
+![JAB](jab.png)
 
 
